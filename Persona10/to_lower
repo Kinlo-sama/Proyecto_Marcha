@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for file in *;
+do 
+	if [ -f "$file" ];
+	then 
+		new_name="$(echo "${file:0:1}" | tr '[:upper:]' '[:lower:]')${file:1}"
+		mv $file "$new_name"
+	fi
+done 
+echo "Done"

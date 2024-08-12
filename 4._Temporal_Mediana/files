@@ -1,0 +1,10 @@
+#!/bin/bash
+NUM_FILES=10
+BASE_NAME="Persona"
+
+for ((i=1; i<=NUM_FILES; i++))
+do
+	mkdir "${BASE_NAME}${i}"
+done 
+
+echo "$NUM_FILES carpetas creadas con exito"

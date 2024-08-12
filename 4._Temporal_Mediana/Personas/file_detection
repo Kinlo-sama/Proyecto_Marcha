@@ -1,0 +1,12 @@
+#!/bin/bash
+
+num_files=10
+
+for ((i=1; i<=num_files; i++))
+do
+	cd "Persona${i}"
+	mkdir "Binari"
+	cd ".."
+done 
+
+echo "Done"
